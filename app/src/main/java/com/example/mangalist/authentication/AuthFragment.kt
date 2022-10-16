@@ -44,6 +44,7 @@ class AuthFragment : Fragment() {
             auth.signOut()
             Toast.makeText(context, "Leaved", Toast.LENGTH_SHORT).show()
             checkUser()
+            //dfdf
         }
         binding.btnSignIn.setOnClickListener {
             reg(view)
