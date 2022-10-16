@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MangaList</string>
+    <string-array name="screen_array">
+        <item>Home</item>
+        <item>Account</item>
+        <item>MyManga</item>
+    </string-array>
+</resources>

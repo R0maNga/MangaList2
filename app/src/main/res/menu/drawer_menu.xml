@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/homeFragment"
+    android:title="Home"
+    android:icon="@drawable/ic_baseline_home_24"
+    >
+
+</item>
+    <item
+        android:id="@+id/myMangaFragment"
+        android:title="MyManga"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        >
+
+    </item>
+    <item
+        android:id="@+id/searchFragment"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        >
+
+    </item>
+    <item
+        android:id="@+id/authFragment"
+        android:title="Registration"
+        android:icon="@drawable/ic_baseline_login_24"
+        >
+
+    </item>
+
+
+
+
+
+</menu>

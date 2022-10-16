@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/routes"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mangalist.main_screen.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_myMangaFragment"
+            app:destination="@id/myMangaFragment"
+            app:enterAnim="@android:anim/cycle_interpolator"
+            app:exitAnim="@android:anim/anticipate_overshoot_interpolator"
+            app:popEnterAnim="@android:anim/bounce_interpolator"
+            app:popExitAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_homeFragment_to_mangaItemFragment"
+            app:destination="@id/mangaItemFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment2"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myMangaFragment"
+        android:name="com.example.mangalist.MyMangaFragment"
+        android:label="MyMangaFragment" />
+    <fragment
+        android:id="@+id/mangaItemFragment"
+        android:name="com.example.mangalist.manga_info.MangaItemFragment"
+        android:label="MangaItemFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.mangalist.search_screen.searchFragment"
+        android:label="searchFragment" />
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.mangalist.authentication.AuthFragment"
+        android:label="AuthFragment" />
+</navigation>

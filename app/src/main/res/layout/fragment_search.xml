@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/editText"
+        android:inputType="textShortMessage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/buttonSearch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_search_24"
+        app:layout_constraintTop_toBottomOf="@id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        >
+
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_Manga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonSearch"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
