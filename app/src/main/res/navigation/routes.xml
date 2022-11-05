@@ -24,8 +24,12 @@
     </fragment>
     <fragment
         android:id="@+id/myMangaFragment"
-        android:name="com.example.mangalist.MyMangaFragment"
-        android:label="MyMangaFragment" />
+        android:name="com.example.mangalist.my_manga.MyMangaFragment"
+        android:label="MyMangaFragment" >
+        <action
+            android:id="@+id/action_myMangaFragment_to_mangaItemFragment"
+            app:destination="@id/mangaItemFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mangaItemFragment"
         android:name="com.example.mangalist.manga_info.MangaItemFragment"

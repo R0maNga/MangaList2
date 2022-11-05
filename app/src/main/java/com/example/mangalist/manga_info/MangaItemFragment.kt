@@ -58,13 +58,14 @@ class MangaItemFragment : Fragment() {
                                     mangaList.data.images!!.jpg.imageUrl,
                                     mangaList.data.title,
                                     mangaList.data.rank.toString(),
-                                   // binding.spinner.selectedItemPosition.toString()
+                                    binding.spinner.selectedItemPosition.toString()
                                 )
                             ).addOnSuccessListener {
                                 Toast.makeText(context, "dsf", Toast.LENGTH_SHORT).show()
 
                             }.addOnFailureListener {
-                                Toast.makeText(context, it.localizedMessage, Toast.LENGTH_SHORT).show()
+                                Toast.makeText(context, it.localizedMessage, Toast.LENGTH_SHORT)
+                                    .show()
 
                             }
 
@@ -78,7 +79,6 @@ class MangaItemFragment : Fragment() {
                 Log.e("+", e.message.toString())
             }
         }
-
 
 
     }

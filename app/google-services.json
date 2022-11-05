@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "792502684084",
-    "project_id": "auth-2aa68",
-    "storage_bucket": "auth-2aa68.appspot.com"
+    "project_number": "909291458970",
+    "firebase_url": "https://mangalist-94151-default-rtdb.firebaseio.com",
+    "project_id": "mangalist-94151",
+    "storage_bucket": "mangalist-94151.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:792502684084:android:27e621d7977d43a09c8ae1",
+        "mobilesdk_app_id": "1:909291458970:android:f2fe4e5974865d45502a23",
         "android_client_info": {
           "package_name": "com.example.mangalist"
         }
       },
       "oauth_client": [
         {
-          "client_id": "792502684084-jss6894vl46vl5pb3200v7ci92td4l22.apps.googleusercontent.com",
+          "client_id": "909291458970-rp2qp6987qr4eh41nmkvt5h5t2i129md.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBEGwbquXHKhGgRrG7DSST6x2BOQTsple0"
+          "current_key": "AIzaSyCZuQwr8pzmDLy85G2hCG3T4JwG_QNZzg8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "792502684084-jss6894vl46vl5pb3200v7ci92td4l22.apps.googleusercontent.com",
+              "client_id": "909291458970-rp2qp6987qr4eh41nmkvt5h5t2i129md.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
