@@ -5,4 +5,10 @@
         <item>Account</item>
         <item>MyManga</item>
     </string-array>
+    <string-array name="spinner_array">
+        <item>Reading</item>
+        <item>Finished</item>
+        <item>Dropped</item>
+        <item>In Plan</item>
+    </string-array>
 </resources>
