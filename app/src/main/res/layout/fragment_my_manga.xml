@@ -22,7 +22,8 @@
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reading" />
+            android:text="Reading"
+            />
 
         <Button
             android:id="@+id/finished"
@@ -43,7 +44,7 @@
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="In Plan" />
+            android:text="Plan" />
 
     </com.google.android.material.button.MaterialButtonToggleGroup>
 

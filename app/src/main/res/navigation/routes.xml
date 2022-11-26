@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.mangalist.main_screen.HomeFragment"
-        android:label="HomeFragment" >
+        android:label="Home" >
         <action
             android:id="@+id/action_homeFragment_to_myMangaFragment"
             app:destination="@id/myMangaFragment"
@@ -25,7 +25,7 @@
     <fragment
         android:id="@+id/myMangaFragment"
         android:name="com.example.mangalist.my_manga.MyMangaFragment"
-        android:label="MyMangaFragment" >
+        android:label="My manga" >
         <action
             android:id="@+id/action_myMangaFragment_to_mangaItemFragment"
             app:destination="@id/mangaItemFragment" />
@@ -33,13 +33,13 @@
     <fragment
         android:id="@+id/mangaItemFragment"
         android:name="com.example.mangalist.manga_info.MangaItemFragment"
-        android:label="MangaItemFragment" />
+        android:label="Manga" />
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.example.mangalist.search_screen.searchFragment"
-        android:label="searchFragment" />
+        android:label="Search" />
     <fragment
         android:id="@+id/authFragment"
         android:name="com.example.mangalist.authentication.AuthFragment"
-        android:label="AuthFragment" />
+        android:label="Auth" />
 </navigation>

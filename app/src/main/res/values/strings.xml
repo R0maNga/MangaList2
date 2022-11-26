@@ -12,4 +12,11 @@
         <item>Dropped</item>
         <item>In Plan</item>
     </string-array>
+    <string-array name="dialogFragment_array">
+        <item>Excellent</item>
+        <item>Very good</item>
+        <item>Good</item>
+        <item>Average</item>
+        <item>Poor</item>
+    </string-array>
 </resources>

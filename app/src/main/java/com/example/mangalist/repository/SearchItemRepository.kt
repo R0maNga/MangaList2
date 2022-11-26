@@ -8,8 +8,8 @@ import com.example.mangalist.model.MangaDataForId
 class SearchItemRepository(
     private val apiService: ApiService
 ) {
-    suspend fun getMangaByName(name: String): MangaData {
-        val nnn = apiService.getMangaByName(name)
+    suspend fun getMangaByName(name: String, limit: Int): MangaData {
+        val nnn = apiService.getMangaByName(name,limit)
         Log.e("MangA", nnn.toString())
         return nnn
     }

@@ -7,5 +7,6 @@ data class DbManga(
     var images: String?,
     var title: String?,
     var rank: String?,
-    var watchStatus: String?
-)
+    var watchStatus: String?,
+    val userRating: String
+):java.io.Serializable

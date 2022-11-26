@@ -24,9 +24,10 @@ class SearchViewModel:ViewModel(){
     var liveMangaData: MutableLiveData<MangaData> = MutableLiveData()
 
     fun getMangaByName(name:String) {
+        val rand = 20
         viewModelScope.launch(Dispatchers.IO + coroutineExceptionHandler) {
             try {
-                val mangas = searchItemRepository.getMangaByName(name)
+                val mangas = searchItemRepository.getMangaByName(name,rand)
                 liveMangaData.postValue(mangas)
             }
             catch (e:Exception)

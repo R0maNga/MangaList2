@@ -5,5 +5,6 @@ data class MyManga(
     val images: String,
     val rank: String,
     val title: String,
-    val watchStatus: String
+    val watchStatus: String,
+    val userRating: String
 )
