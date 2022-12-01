@@ -50,11 +50,19 @@ class HomeAdapter(
             rating.text = "${item.score} ★"
             title.text = item.title
 
-            itemView.setOnClickListener {
-                bundle.putInt("ID", item.id)
-                Navigation.findNavController(itemView)
-                    .navigate(R.id.action_homeFragment_to_mangaItemFragment, bundle)
-            }
+                try {
+                    itemView.setOnClickListener {
+                        bundle.putInt("ID", item.id)
+                        Navigation.findNavController(itemView)
+                            .navigate(R.id.action_homeFragment_to_mangaItemFragment, bundle)
+                    }
+
+                }
+                catch (e:Exception)
+                {
+
+                }
+
         }
     }
 }

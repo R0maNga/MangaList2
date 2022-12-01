@@ -30,12 +30,16 @@ class searchFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-
+        searchViewModel.progressBarLiveData.observe(viewLifecycleOwner) {
+            if (it == true) binding.progressBarSearch.visibility = View.VISIBLE
+            else binding.progressBarSearch.visibility = View.GONE
+        }
         binding.buttonSearch.setOnClickListener {
             val inputText = binding.editText.text.toString()
             searchViewModel.getMangaByName(inputText)
         }
         searchViewModel.liveMangaData.observe(viewLifecycleOwner) {
+
             val adapter = SearchAdapter(it.mangaList)
             binding.rvManga.layoutManager = GridLayoutManager(context, 2)
             binding.rvManga.adapter = adapter

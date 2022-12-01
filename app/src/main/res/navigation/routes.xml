@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.mangalist.main_screen.HomeFragment"
-        android:label="Home" >
+        android:label="Home">
         <action
             android:id="@+id/action_homeFragment_to_myMangaFragment"
             app:destination="@id/myMangaFragment"
@@ -21,11 +21,14 @@
         <action
             android:id="@+id/action_homeFragment_to_searchFragment2"
             app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_readMangaFragment"
+            app:destination="@id/readMangaFragment" />
     </fragment>
     <fragment
         android:id="@+id/myMangaFragment"
         android:name="com.example.mangalist.my_manga.MyMangaFragment"
-        android:label="My manga" >
+        android:label="My manga">
         <action
             android:id="@+id/action_myMangaFragment_to_mangaItemFragment"
             app:destination="@id/mangaItemFragment" />
@@ -42,4 +45,25 @@
         android:id="@+id/authFragment"
         android:name="com.example.mangalist.authentication.AuthFragment"
         android:label="Auth" />
+    <fragment
+        android:id="@+id/readMangaFragment"
+        android:name="com.example.mangalist.read_manga.ReadMangaFragment"
+        android:label="ReadMangaFragment">
+        <action
+            android:id="@+id/action_readMangaFragment_to_readMangaItemFragment32"
+            app:destination="@id/readMangaItemFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/readMangaItemFragment3"
+        android:name="com.example.mangalist.read_manga_item.ReadMangaItemFragment"
+        android:label="ReadMangaItemFragment" >
+        <action
+            android:id="@+id/action_readMangaItemFragment3_to_mangaPannelFragment"
+            app:destination="@id/mangaPannelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mangaPannelFragment"
+        android:name="com.example.mangalist.manga_pannel.MangaPannelFragment"
+        android:label="MangaPannelFragment" />
+
 </navigation>

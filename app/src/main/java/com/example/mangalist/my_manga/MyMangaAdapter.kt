@@ -41,13 +41,20 @@ class MyMangaAdapter(
             }
 
             rank.text = "Global rank:" + item.rank
-            itemView.setOnClickListener {
+            try {
+                itemView.setOnClickListener {
 
-                bundle.putInt("ID", item.id)
+                    bundle.putInt("ID", item.id)
 
-                Navigation.findNavController(itemView)
-                    .navigate(R.id.action_myMangaFragment_to_mangaItemFragment, bundle)
+                    Navigation.findNavController(itemView)
+                        .navigate(R.id.action_myMangaFragment_to_mangaItemFragment, bundle)
+                }
             }
+            catch (e:Exception)
+            {
+
+            }
+
         }
 
     }

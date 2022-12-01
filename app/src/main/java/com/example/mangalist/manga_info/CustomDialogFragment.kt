@@ -54,6 +54,7 @@ class CustomDialogFragment : DialogFragment() {
         }
         binding.submitButton.setOnClickListener {
 
+
             val selectedId = binding.ratingRadioGroup.checkedRadioButtonId
             val awe = binding.getRoot().findViewById<RadioButton>(selectedId)
             val amog = awe.text.toString()

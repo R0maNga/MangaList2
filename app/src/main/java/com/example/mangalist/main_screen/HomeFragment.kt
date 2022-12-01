@@ -19,8 +19,7 @@ class HomeFragment : Fragment() {
     private val homeViewModel = HomeViewModel()
 
     private lateinit var binding: FragmentHomeBinding
-    lateinit var loadingPB: ProgressBar
-    var isProgressVisible = false
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

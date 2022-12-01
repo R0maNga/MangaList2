@@ -21,13 +21,16 @@ class SearchViewModel:ViewModel(){
     private val apiService = retrofit.create(ApiService::class.java)
     private val searchItemRepository = SearchItemRepository(apiService)
 
+    val progressBarLiveData = MutableLiveData<Boolean>(false)
     var liveMangaData: MutableLiveData<MangaData> = MutableLiveData()
 
     fun getMangaByName(name:String) {
         val rand = 20
+        progressBarLiveData.postValue(true)
         viewModelScope.launch(Dispatchers.IO + coroutineExceptionHandler) {
             try {
                 val mangas = searchItemRepository.getMangaByName(name,rand)
+                progressBarLiveData.postValue(false)
                 liveMangaData.postValue(mangas)
             }
             catch (e:Exception)

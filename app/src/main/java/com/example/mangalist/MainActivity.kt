@@ -45,7 +45,6 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration.openableLayout?.isOpen
         binding.toolbar.setNavigationOnClickListener { Log.d("KEK", "onCreate: QWE") }
         // для затемнения при скроле
-        binding.drawerLayout.setScrimColor(Color.GRAY)
 
         binding.toolbar.setupWithNavController(navController, appBarConfiguration)
 

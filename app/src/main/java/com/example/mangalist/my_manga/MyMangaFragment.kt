@@ -35,6 +35,7 @@ class MyMangaFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         auth = FirebaseAuth.getInstance()
         database = Firebase.database.reference
 
@@ -65,6 +66,7 @@ class MyMangaFragment : Fragment() {
                         )
                     )
                 }
+
                 val swipeToDeleteCallback = object : SwipeTodeleteCallback() {
                     override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                         val position = viewHolder.adapterPosition
@@ -119,6 +121,11 @@ class MyMangaFragment : Fragment() {
         binding.rvMyManga.layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         binding.rvMyManga.adapter = adapter
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mangaList.clear()
     }
 
 

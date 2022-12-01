@@ -43,21 +43,29 @@ class SearchAdapter(
 
         fun bind(item: Manga) {
 
-            Glide.with(itemView)
-                .load(item.images?.jpg?.imageUrl)
-                .placeholder(R.drawable.ic_baseline_home_24)
-                .into(image)
+            try {
+                Glide.with(itemView)
+                    .load(item.images?.jpg?.imageUrl)
+                    .placeholder(R.drawable.ic_baseline_home_24)
+                    .into(image)
 
-            title.text = item.title;
-            if (item.score == null) {
-                ratig.isVisible = false
-            } else
-                ratig.text = "${item.score} ★";
-            itemView.setOnClickListener {
-                bundle.putInt("ID", item.id)
-                Navigation.findNavController(itemView)
-                    .navigate(R.id.mangaItemFragment, bundle)
+                title.text = item.title;
+                if (item.score == null) {
+                    ratig.isVisible = false
+                } else
+                    ratig.text = "${item.score} ★";
+                itemView.setOnClickListener {
+                    bundle.putInt("ID", item.id)
+                    Navigation.findNavController(itemView)
+                        .navigate(R.id.mangaItemFragment, bundle)
+                }
+
             }
+            catch (e:Exception)
+            {
+
+            }
+
         }
     }
 

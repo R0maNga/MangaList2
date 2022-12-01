@@ -28,7 +28,8 @@
             android:id="@+id/excellentRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Excellent"/>
+            android:text="Excellent"
+            android:checked="true"/>
         <RadioButton
             android:id="@+id/veryGoodRadioButton"
             android:layout_width="wrap_content"
